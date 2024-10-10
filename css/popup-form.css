@@ -1,0 +1,32 @@
+.popup {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+select,
+input {
+    height: 2rem;
+    width: 90%;
+    padding: auto;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+select option[disabled] {
+    color: gray;
+    cursor: not-allowed;
+}
+
+form button {
+    margin-top: 5px;
+}
+
+div label {
+    font-size: 0.8rem;
+}

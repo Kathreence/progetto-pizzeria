@@ -1,0 +1,372 @@
+html,
+body {
+    width: 99vw;
+    height: auto;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: "Imprima", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-fluid {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navigation bar */
+
+nav {
+    position: fixed;
+    top: 1%;
+    width: 98%;
+    z-index: 1000;
+    border: 3px solid black;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(225, 225, 225);
+}
+
+
+
+.col_nav_sx {
+    display: flex;
+    align-items: center;
+}
+
+.col_nav_dx {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.box_nav_link,
+.box_reservation_button {
+    margin-right: 2%;
+}
+
+a,
+p,
+h1,
+h6 {
+    color: black;
+    margin: 0;
+}
+
+a:hover,
+a h1:hover,
+a p:hover {
+    color: #800020;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    border: 3px solid #800020;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: #800020;
+    color: white;
+}
+
+
+.popup {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+}
+
+select,
+input {
+    width: 75%;
+    padding: auto;
+    ;
+}
+
+select option[disabled] {
+    color: gray;
+    cursor: not-allowed;
+}
+
+
+
+/* Immagine principale */
+
+.main_immage_row {
+    width: 95%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+}
+
+.main_immage_row .col {
+    margin-top: 7.5%;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* Scritta di benvenuto */
+
+.welcome_row {
+    display: flex;
+    justify-content: center;
+}
+
+.welcome_row .col {
+    font-size: 5rem;
+}
+
+
+
+/* Descrizione */
+
+#description_row {
+    width: 100%;
+    padding: 4%;
+    margin-bottom: 1%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+#description_row .col-8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#description_row p {
+    color: white;
+    text-align: center;
+    font-size: large;
+    margin-bottom: 3%;
+}
+
+
+
+/* Sezioni centrali */
+
+.main_row {
+    width: 68%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+.main_row .col {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border: black solid 3px;
+    border-radius: 0;
+}
+
+
+
+/* Sezione galleria */
+
+.gallery_images_row {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery_images_row .col {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery_images_row img {
+    width: 100%;
+    height: 50%;
+}
+
+
+
+/* Sezione menù */
+
+#menus_row img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.menu_buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5%;
+}
+
+
+
+/* Sezione dove siamo */
+
+.card_row {
+    margin: 4%;
+    display: flex;
+}
+
+.card_row p {
+    margin-left: 2%;
+}
+
+
+
+/* Sezione prenota */
+
+#reservations_row {
+    width: 80%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
+#reservations_row .col-10 {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(https://images.unsplash.com/photo-1716237389072-354bcb7ab6d0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHBpenplcmlhfGVufDB8fDB8fHww);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#reservations_row .col-10 p {
+    color: white;
+    font-size: xx-large;
+}
+
+
+/* footer-nav */
+
+#footer_nav_row {
+    width: 98%;
+    border: 3px solid black;
+    padding: 0.5rem;
+    margin-bottom: 0.5%;
+    box-sizing: border-box;
+}
+
+#footer_nav_row .col,
+.social_link,
+.social_link a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer_nav_row img {
+    width: 35%;
+}
+
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background-color: #800020;
+    display: flex;
+
+}
+
+footer .col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    padding: 1%;
+    font-weight: bolder;
+}
+
+
+
+/* PopUp gestione privacy */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 25%;
+}
+
+.consent_buttons {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.consent_button:hover {
+    background-color: grey;
+    color: white;
+}

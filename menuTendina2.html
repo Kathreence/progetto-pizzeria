@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu a Tendina con Bootstrap</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Stile per il contenitore della tendina */
+        .tendina {
+            display: none;
+            /* Nasconde la tendina */
+            position: absolute;
+            /* Posizionamento assoluto */
+            background-color: #333;
+            /* Colore di sfondo della tendina */
+            min-width: 160px;
+            /* Larghezza minima della tendina */
+            z-index: 1;
+            /* Sovrapposizione rispetto ad altri elementi */
+        }
+
+        /* Mostra la tendina quando si passa sopra l'elemento principale */
+        .menu-item:hover .tendina {
+            display: block !important;
+            /* Mostra la tendina */
+        }
+
+        /* Stile per i link all'interno della tendina */
+        .tendina-item {
+            color: white;
+            /* Colore del testo */
+            padding: 12px 16px;
+            /* Padding interno */
+            cursor: pointer;
+            /* Cambia il cursore su hover */
+        }
+
+        /* Cambia il colore di sfondo dei link della tendina quando si passa con il mouse */
+        .tendina-item:hover {
+            background-color: #555;
+            /* Colore di sfondo su hover */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="menu bg-dark p-2 position-relative">
+            <div class="menu-item text-white d-inline-block p-2">Home</div>
+            <div class="menu-item text-white d-inline-block p-2">Chi Siamo</div>
+            <div class="menu-item text-white d-inline-block p-2">
+                Servizi
+                <div class="tendina">
+                    <div class="tendina-item">Design Web</div>
+                    <div class="tendina-item">SEO</div>
+                    <div class="tendina-item">Marketing</div>
+                </div>
+            </div>
+            <div class="menu-item text-white d-inline-block p-2">Contatti</div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

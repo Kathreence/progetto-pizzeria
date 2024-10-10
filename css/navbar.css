@@ -1,0 +1,56 @@
+/* Nasconde la tendina di default */
+.tendina {
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    border: 3px solid black;
+    /* Posizionamento assoluto */
+    background-color: rgb(225, 225, 225);
+    /* Colore di sfondo della tendina */
+    min-width: 160px;
+    /* Larghezza minima della tendina */
+    z-index: 1;
+    /* Sovrapposizione rispetto ad altri elementi */
+}
+
+/* Mostra la tendina quando si passa sopra l'elemento principale */
+.menu-item:hover .tendina {
+    display: block !important;
+    /* Mostra la tendina */
+}
+
+/* Stile per i link all'interno della tendina */
+.tendina-item {
+    color: white;
+    /* Colore del testo */
+    padding: 12px 16px;
+    /* Padding interno */
+    cursor: pointer;
+    /* Cambia il cursore su hover */
+}
+
+
+.material-symbols-outlined:hover {
+    cursor: pointer;
+    color: #800020;
+}
+
+.box_phone_number {
+    width: 200px;
+    padding-left: 1%;
+    padding-right: 1%;
+    box-sizing: border-box;
+    background-color: white;
+    border: #800020 solid 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box_phone_number img {
+    width: 15%;
+}
+
+.box_phone_number p {
+    font-size: x-large;
+}

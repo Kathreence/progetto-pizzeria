@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <title>Pizzeria Generation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Imprima&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://img.icons8.com/?size=100&id=80764&format=png&color=000000" type="image/png">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/popup-form.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <nav class="row mw-lg-75 navbar-expand-lg justify-content-between navbar-dark">
+            <div class="col-2 col-md-4 col_nav_sx">
+                <a class="logo" href="#">
+                    <div style="width: 65px">
+                        <img class="w-100" src="https://img.icons8.com/?size=100&id=80764&format=png&color=000000"
+                            alt="">
+                    </div>
+                </a>
+                <a id="logo_text" style="text-align: center; text-decoration: none; cursor: pointer;" href="#">
+                    <h1>Generation</h1>
+                    <h6>Pizzeria</h6>
+                </a>
+            </div>
+            <div class="row col-md-7 justify-content-end collapse navbar-collapse" id="navbarNav">
+                <div class="col-xl-1 d-lg-none d-xl-block box_nav_link">
+                    <a class="nav-link active text-center" href="#menus_row">
+                        <p>Menù</p>
+                    </a>
+                </div>
+                <div class="col-xl-1 d-lg-none d-xl-block box_nav_link">
+                    <a class="nav-link" href="#gallery_row">
+                        <p>Galleria</p>
+                    </a>
+                </div>
+                <div class="col-xl-2 d-lg-none d-xl- block box_nav_link">
+                    <a class="nav-link" href="#place_row">
+                        <p>Dove siamo</p>
+                    </a>
+                </div>
+                <form class="col-xl-3 col-md-4 box_reservation_button">
+                    <button class="button reservation_button" id="prenotare" type="button">Prenota online</button>
+                </form>
+                <div class="col-xl-2 col-md-2 box_phone_number">
+                    <img src="https://img.icons8.com/?size=100&id=9659&format=png&color=000000" alt="">
+                    <p>06-00000000</p>
+                </div>
+            </div>
+            <div style="width: 10%;" class="col-1 d-xl-none d-flex justify-content-end align-items-center">
+                <span class="material-symbols-outlined menu" id="menuTendina">
+                    menu_book
+                </span>
+                <div width="100px" class="d-none tendina" id="tendina">
+                    <div class="tendina-item">
+                        <a class="nav-link" href="#menus_row">
+                            <p>Menù</p>
+                        </a>
+                    </div>
+                    <div class="tendina-item">
+                        <a class="nav-link" href="#gallery_row">
+                            <p>Galleria</p>
+                        </a>
+                    </div>
+                    <div class="tendina-item">
+                        <a class="nav-link" href="#place_row">
+                            <p>Dove siamo</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- immagine -->
+        <section class="row main_immage_row">
+            <div class="col" style="background-image: url();">
+                <button class="button arrow_button" id="arrow_button_sx" type="button">&lt;</button>
+                <button class="button arrow_button" id="arrow_button_dx" type="button">&gt;</button>
+            </div>
+        </section>
+
+        <section class="row welcome_row">
+            <div class="col welcome_text">
+                Benvenuti!
+            </div>
+        </section>
+
+        <section class="row" id="description_row">
+            <div class="col-8">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident accusamus aspernatur quod,
+                    similique molestiae tempora error alias nam at, repellat voluptas velit labore laudantium dolorem
+                    quas? Provident voluptatum quod molestias!
+                    Eaque, nobis. Veniam nulla quam distinctio quibusdam dicta consequuntur. Unde reiciendis eum ut
+                    voluptatem ipsa itaque, recusandae soluta, nesciunt necessitatibus facilis numquam nihil ad suscipit
+                    ex perspiciatis molestias aliquid laudantium?
+                </p>
+                <button class="button" id="learn_more_button" type="button">Learn more</button>
+            </div>
+        </section>
+
+        <section class="row main_row" id="gallery_row">
+            <div class="col">
+                <div class="row gallery_images_row">
+                    <div class="col" style="padding: 0; margin-right: 1%;">
+                        <img style="margin-bottom: 2.5%;"
+                            src="https://images.unsplash.com/photo-1662043591509-25e91fc3e2a1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cGl6emV8ZW58MHx8MHx8fDI%3D"
+                            alt="Immagine non disponibile">
+                        <img src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHBpenphfGVufDB8fDB8fHwy"
+                            alt="Immagine non disponibile">
+                    </div>
+                    <div class="col" style="padding: 0; margin-right: 1%;">
+                        <img style="margin-bottom: 2.5%;"
+                            src="https://images.unsplash.com/photo-1489564239502-7a532064e1c2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBpenphfGVufDB8fDB8fHww"
+                            alt="Immagine non disponibile">
+                        <img src="https://images.unsplash.com/photo-1622880833523-7cf1c0bd4296?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fHBpenphfGVufDB8fDB8fHwy"
+                            alt="Immagine non disponibile">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 60%;">
+                    <div class="card-header" style="border-bottom: black solid 3px;">
+                        <h5 class="card-title" style="margin: 0; font-size: xx-large;">Galleria</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Guarda le foto del nostro locale, delle nostre pizze e i nostri clienti.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="row main_row" id="menus_row">
+            <div class="col">
+                <div class="card" style="width: 70%;">
+                    <div class="card-header" style="border-bottom: black solid 3px;">
+                        <h5 class="card-title" style="margin: 0; font-size: xx-large;">I nostri menù</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Scegli tra una vasta varietà di pizze e altro nei nostri due menù,
+                            per chi viene in locale e chi ordina da casa.
+                        </p>
+                    </div>
+                    <div class="menu_buttons">
+                        <button class="button" id="dineIn_button" type="button">Menù da tavola</button>
+                        <button class="button" id="takeAway_button" type="button">Menù d'asporto</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <img src="images/menus.png" alt="">
+            </div>
+        </section>
+
+        <section class="row main_row" id="place_row">
+            <div class="col">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190028.3544266058!2d12.371191335486762!3d41.91020879185354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6196f9928ebb%3A0xb90f770693656e38!2sRoma%20RM!5e0!3m2!1sit!2sit!4v1727533454619!5m2!1sit!2sit"
+                    width="100%" height="100%" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 60%;">
+                    <div class="card-header" style="border-bottom: black solid 3px;">
+                        <h5 class="card-title" style="margin: 0; font-size: xx-large;">Vieni a trovarci</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="card_row">
+                            <span class="material-symbols-outlined">pin_drop</span>
+                            <p>Via nomeStrada 126 - 00000 Roma RM</p>
+                        </div>
+                        <div class="card_row">
+                            <span class="material-symbols-outlined">calendar_month</span>
+                            <p>Dal Lunedì al Sabato ore 19:00 - 24:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="row" id="reservations_row">
+            <div class="col-10">
+                <p>Vieni a gustare le nostre pizze!</p><br>
+                <button class="button reservation_button" type="button">Prenota adesso</button>
+            </div>
+        </section>
+
+        <section class="row" id="footer_nav_row">
+            <div class="col">
+                <div class="box_nav_link social_link">
+                    <a class="nav-link" href="#">
+                        <img src="https://img.icons8.com/?size=100&id=32309&format=png&color=000000" alt="">
+                    </a>
+                    <a class="nav-link" href="#">
+                        <img src="https://img.icons8.com/?size=100&id=118467&format=png&color=000000" alt="">
+                    </a>
+                    <a class="nav-link" href="#">
+                        <img src="https://img.icons8.com/?size=100&id=phOKFKYpe00C&format=png&color=000000" alt="">
+                    </a>
+                    <a class="nav-link" href="#">
+                        <img style="width: 12.5%; margin-right: 2%;"
+                            src="https://img.icons8.com/?size=100&id=12580&format=png&color=000000" alt="">
+                        <p>pizzeriaGeneration@gmail.com</p>
+                    </a>
+                </div>
+                <div class="box_nav_link">
+                    <a class="nav-link" href="#">
+                        <p>LAVORA CON NOI</p>
+                    </a>
+                </div>
+                <button class="button" id="subscribe-button" type="button">Iscriviti</button>
+            </div>
+        </section>
+
+        <footer class="row">
+            <div class="col">
+                <p>Developed by ...</p>
+                <p>Copyright © 2024</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <div id="consentModal" class="modal">
+        <div class="modal-content">
+            <span class="close" style="display: flex; justify-content: flex-end;">&times;</span>
+            <h2>Informativa sui Dati Personali</h2>
+            <p>Utilizziamo i tuoi dati per migliorare la tua esperienza.<br>Vuoi acconsentire?</p>
+            <div class="consent_buttons">
+                <button class="consent_button" id="acceptBtn" type="button">Accetta</button>
+                <button class="consent_button" id="declineBtn" type="button">Rifiuta</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- popup prenotazione-->
+    <div class="popup d-flex d-none align-items-center justify-content-center" id="prenotazione">
+        <div
+            class="position-relative d-flex flex-column w-50 h-fit-content rounded-3 py-5 bg-light align-items-center justify-content-center">
+            <div class="position-absolute" style="top:5px; right:5px;">
+                <span class="material-symbols-outlined" id="xprenotazione">
+                    close
+                </span>
+            </div>
+            <form class="d-flex flex-column align-items-center" action="" id="formPrenotazione">
+                <label for="nomePrenotazione">Nome della prenotazione</label>
+                <input type="text" id="nomePrenotazione" required>
+                <label for="emailContatto">Email di conferma</label>
+                <input type="email" id="emailContatto" required>
+                <label for="persone">Numero di Persone</label>
+                <select name="persone" id="persone" placeholder="Numero Persone" required>
+                    <option value="" disabled selected>Numero di Persone</option>
+                    <option value="1">1 persona</option>
+                    <option value="2">2 persone</option>
+                    <option value="3">3 persone</option>
+                    <option value="4">4 persone</option>
+                    <option value="5">5 persone</option>
+                </select>
+                <label for="date">Data</label>
+                <input type="date" id="date" required>
+                <label for="orario">Orario</label>
+                <select name="orario" id="orario" required>
+                    <option value="" disabled selected>Orario</option>
+                    <option value="12">12:00</option>
+                    <option value="12">12:30</option>
+                    <option value="12">13:00</option>
+                    <option value="12">13:30</option>
+                </select>
+                <button>Conferma</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- popup newsletter-->
+    <div class="popup d-flex d-none align-items-center justify-content-center" id="subscribe">
+        <div
+            class="position-relative d-flex flex-column w-50 h-50 rounded-3 bg-light align-items-center justify-content-center p-5">
+            <div class="position-absolute" style="top:5px; right:5px;" id="xsubscribe">
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+            </div>
+            <p>🎉 Siamo entusiasti di annunciare il lancio del nostro nuovo menu! <br> Scopri le nostre nuove creazioni
+                gourmet e lasciati conquistare dai sapori unici delle nostre pizze artigianali. <br> Ti aspettiamo!</p>
+            <form class="d-flex flex-column align-items-center" action="" id="formSubscribe">
+                <label for="emailContatto">Email </label>
+                <input type="email" id="emailContatto" required>
+                <div class="row align-items-center">
+                    <input class="col-1" type="checkbox" id="conferma" required>
+                    <label class="col-11" for="conferma">Accetto i termini sulla privacy e desidero ricevere
+                        aggiornamenti via email.
+                    </label>
+                </div>
+
+                <button>Conferma</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="popup d-flex d-none align-items-center justify-content-center" id="conferma">
+        <div class="position-relative w-50 h-25 rounded-3 bg-light d-flex align-items-center justify-content-center">
+            <div class="position-absolute" style="top: 5px; right: 5px;">
+                <span class="material-symbols-outlined" id="xconferma">
+                    close
+                </span>
+            </div>
+            <div class="text-center" id="messaggioConferma" style="white-space: pre-line;">
+                Ciao
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <script src="../js/k.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
